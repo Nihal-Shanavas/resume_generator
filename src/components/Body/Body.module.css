@@ -1,0 +1,53 @@
+/* Body.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column; /* Stack components for mobile */
+  padding: 20px;
+}
+
+.heading {
+  font-size: 24px;
+  text-align: center; /* Center the heading for mobile screens */
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.colors {
+  display: flex;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .heading {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .color {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px; /* Reduce margin for better spacing on mobile */
+  }
+
+  .toolbar {
+    flex-direction: column; /* Stack toolbar items for mobile */
+  }
+
+  .toolbar button {
+    margin-top: 10px; /* Add margin for better spacing on mobile */
+  }
+}
